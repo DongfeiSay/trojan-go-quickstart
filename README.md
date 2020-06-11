@@ -1,16 +1,16 @@
-# trojan-go-quickstart
+# trojan-go-maintenance
 
-A simple installation script for trojan-go server.
+trojan-go的简单维护脚本。
 
-This script will help you install the trojan-go binary to `/usr/bin/trojan-go`, a template for server configuration to `/etc/trojan-go`, and (if applicable) a systemd service to `/etc/systemd/system`. It only works on `linux-amd64` machines.
+该脚本包含trojan-go-quickstart功能外，还可以升级trojan-go，甚至完全卸载trojan-go。
 
-## Usage
+## 用法
 
-- via `curl`
+- 通过 `curl`
     ```
-    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/DongfeiSay/trojan-go-quickstart/master/trojan-go-quickstart.sh)"
+    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/DongfeiSay/trojan-go-quickstart/maintenance/trojan-go-maintenance.sh)"
     ```
-- via `wget`
+- 通过 `wget`
     ```
-    sudo bash -c "$(wget -O- https://raw.githubusercontent.com/DongfeiSay/trojan-go-quickstart/master/trojan-go-quickstart.sh)"
+    sudo bash -c "$(wget -O- https://raw.githubusercontent.com/DongfeiSay/trojan-go-quickstart/maintenance/trojan-go-maintenance.sh)"
     ```
