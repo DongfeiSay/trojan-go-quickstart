@@ -20,8 +20,8 @@ _INSTALL(){
 
 _UPDATE(){
 	systemctl stop trojan-go
-	rm -rf /usr/bin/trojan-go
-	wget -N --no-check-certificate https://github.com/p4gefau1t/trojan-go/releases/download/$(curl -fsSL https://api.github.com/repos/p4gefau1t/trojan-go/releases | grep '"tag_name":' | head -n 1 | sed -E 's/.*"([^"]+)".*/\1/')/trojan-go-linux-amd64.zip && unzip ./trojan-go-linux-amd64.zip && chmod +x ./trojan-go && mv ./trojan-go /usr/bin/trojan-go/ && rm -rf ./trojan-go-linux-amd64.zip ./example ./geoip.dat ./geosite.dat
+	rm -rf /usr/bin/trojan-go/*
+	wget -N --no-check-certificate https://github.com/p4gefau1t/trojan-go/releases/download/$(curl -fsSL https://api.github.com/repos/p4gefau1t/trojan-go/releases | grep '"tag_name":' | head -n 1 | sed -E 's/.*"([^"]+)".*/\1/')/trojan-go-linux-amd64.zip && unzip -d /usr/bin/trojan-go/ ./trojan-go-linux-amd64.zip && chmod +x /usr/bin/trojan-go/trojan-go && rm -rf ./trojan-go-linux-amd64.zip
 	systemctl restart trojan-go
 	echo "升级完成"
 }
