@@ -2,7 +2,7 @@
 
 A simple installation script for trojan-go server.
 
-This script will help you install the trojan-go binary to `/usr/bin/trojan-go`, a template for server configuration to `/etc/trojan-go`, and (if applicable) a systemd service to `/etc/systemd/system`. It only works on `linux-amd64` machines.
+This script will help you install the trojan-go binary to `/usr/bin`, a template for server configuration to `/etc/trojan-go`, install the geoip list to `/usr/lib/trojan-go`, and (if applicable) a systemd service to `/etc/systemd/system`. It only works on `linux-amd64` machines.
 
 ## Usage
 
