@@ -38,7 +38,7 @@ _UPDATE(){
 _UNINSTALL(){
 	systemctl stop trojan-go
 	systemctl disable trojan-go
-	rm -rf /usr/share/trojan-go /usr/share/trojan-go /etc/trojan-go
+	rm -rf /usr/bin/trojan-go /usr/share/trojan-go /etc/trojan-go
 	rm -rf /etc/systemd/system/trojan-go.service
 	systemctl daemon-reload
 	echo "卸载完成！"
